@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="dv606.lecture5.AlarmTest">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/F:/Theses/Linne/lecture5-v22/app/src/main/res/menu/menu_alarm_test.xml -->

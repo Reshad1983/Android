@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/F:/Theses/Linne/lecture4-v22/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#ff000000</color>
+    <color name="dark_grey">#ff222222</color>
+    <color name="grey">#ff555555</color>
+    <color name="light_grey">#ffaaaaaa</color>
+    <color name="soft_blue">#ff0000aa</color>
+    <color name="soft_cyan">#ff00aaaa</color>
+    <color name="soft_green">#ff00aa00</color>
+    <color name="soft_magenta">#ffaa00aa</color>
+    <color name="soft_red">#ffaa0000</color>
+    <color name="soft_yellow">#ffaaaa00</color>
+    <color name="solid_blue">#ff0000ff</color>
+    <color name="solid_cyan">#ff00ffff</color>
+    <color name="solid_green">#ff00ff00</color>
+    <color name="solid_magenta">#ffff00ff</color>
+    <color name="solid_red">#ffff0000</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="white">#ffffffff</color>
+    <!-- From: file:/F:/Theses/Linne/lecture4-v22/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/F:/Theses/Linne/lecture4-v22/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="AddTodo">Add</string>
+    <string name="ToDo">ToDo</string>
+    <string name="app_name">Lecture 4</string>
+    <string name="body">Body</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="menu_delete">Delete Note</string>
+    <string name="menu_insert">Add Note</string>
+    <string name="no_notes">No Notes Yet</string>
+    <string name="title">Title</string>
+    <!-- From: file:/F:/Theses/Linne/lecture4-v22/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+</resources>

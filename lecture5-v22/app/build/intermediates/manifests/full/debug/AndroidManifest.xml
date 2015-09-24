@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dv606.lecture5"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:icon="@drawable/lnu_symbol"
+        android:label="Lecture 5 Activities"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="dv606.lecture5.MainList"
+            android:label="Lecture 5 Activities" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Example: MoreIntents -->
+        <activity
+            android:name="dv606.lecture5.MoreIntents"
+            android:label="More Intents" />
+        <activity
+            android:name="dv606.lecture5.Hello"
+            android:label="Hello Activity" />
+        <activity
+            android:name="dv606.lecture5.ReadName"
+            android:label="Read Name Activity" />
+        <activity
+            android:name="dv606.lecture5.ShowTime"
+            android:label="Show Time Activity" >
+            <intent-filter>
+                <action android:name="dv606.lecture5.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Example: BroadcastIndents -->
+        <activity
+            android:name="dv606.lecture5.BroadcastIntents"
+            android:label="Broadcasting Demo" />
+
+        <receiver
+            android:name="dv606.lecture5.InternalMessageReceiver"
+            android:label="Message Receiver" >
+            <intent-filter>
+                <action android:name="dv606.lecture5.BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Example: NotificationsDemo -->
+        <activity
+            android:name="dv606.lecture5.NotificationsDemo"
+            android:label="Notifications Demo" />
+        <activity
+            android:name="dv606.lecture5.NotificationDisplay"
+            android:label="Notification Message" />
+
+        <!-- Example: ServiceDemo -->
+        <activity
+            android:name="dv606.lecture5.ServiceDemo"
+            android:label="Service Demo" />
+
+        <service
+            android:name="dv606.lecture5.SlowCountService"
+            android:enabled="true" />
+
+        <activity
+            android:name="dv606.lecture5.BinderDemo"
+            android:label="Binder Demo" />
+
+        <!-- Example: AlarmDemo -->
+        <activity
+            android:name="dv606.lecture5.AlarmDemo"
+            android:label="Alarm Demo" />
+
+        <receiver
+            android:name="dv606.lecture5.AlarmReceiver"
+            android:label="Alarm Message Receiver" >
+            <intent-filter>
+                <action android:name="dv606.lecture5.ALARM_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Example: Interacting with the GUI Thread -->
+        <activity
+            android:name="dv606.lecture5.Threading"
+            android:label="GUI Thread Interaction" />
+        <activity
+            android:name="dv606.lecture5.AlarmTest"
+            android:label="@string/title_activity_alarm_test" >
+        </activity>
+    </application>
+
+</manifest>

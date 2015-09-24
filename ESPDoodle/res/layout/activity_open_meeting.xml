@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OpenMeetingActivity" 
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Meeting Id:" />
+    
+    <EditText 
+        android:id="@+id/open_meeting_txtID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:singleLine="true"/>
+    
+    <Button 
+        android:id="@+id/open_meeting_btnSelectTimeSlot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Select time slots"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Participant:" />
+    
+    <EditText 
+        android:id="@+id/open_meeting_txtParticipant1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Participant:" />
+    
+    <EditText 
+        android:id="@+id/open_meeting_txtParticipant2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Participant:" />
+    
+    <EditText 
+        android:id="@+id/open_meeting_txtParticipant3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:singleLine="true"/>
+    
+    <Button 
+        android:id="@+id/open_meeting_btnCreateMeeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Create Meeting"/>
+
+</LinearLayout>
