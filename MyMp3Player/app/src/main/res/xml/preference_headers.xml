@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+	<header android:fragment="com.example.reshad.mymp3player.MyPreferenceFragment"
+		android:title="Text"
+		android:summary="Change size and color of the text" >
+
+		<extra
+			android:name="settings"
+			android:value="Text"></extra>
+	</header>
+	<header android:fragment="com.example.reshad.mymp3player.MyPreferenceFragment"
+		android:title="Color"
+		android:summary="Change background color"
+		>
+
+		<extra
+			android:name="settings"
+			android:value="color"></extra>
+	</header>
+	<header android:fragment="com.example.reshad.mymp3player.BlankFragment"
+		android:title="Settings"
+		android:summary="Simple Preferences">
+		<extra
+			android:name="settings"
+			android:value="general setting"></extra>
+	</header>
+
+</preference-headers>

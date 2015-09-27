@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/Theses/Linne/lecture5-v22/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Theses/Linne/Android/lecture5-v22/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/Theses/Linne/lecture5-v22/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Theses/Linne/Android/lecture5-v22/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Lecture 5</string>
@@ -12,7 +12,7 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_alarm_test">AlarmTest</string>
     <string name="title_activity_main">Lecture 5 Activities</string>
-    <!-- From: file:/F:/Theses/Linne/lecture5-v22/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Theses/Linne/Android/lecture5-v22/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Light"/>
 </resources>

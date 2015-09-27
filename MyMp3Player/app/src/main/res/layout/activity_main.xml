@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text="Visited country" android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:background="#b7c0a8"
+        android:id="@+id/visited_country" />
+    <TextView
+        android:text="Alarm Clock" android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#b7c0a8"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="24dp"
+        android:id="@+id/alarm_clock_id" />
+    <TextView
+        android:text="MP3 Player" android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#b7c0a8"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="24dp"
+        android:id="@+id/mp3_player_id" />
+
+</LinearLayout>

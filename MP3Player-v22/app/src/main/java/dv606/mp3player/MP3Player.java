@@ -33,7 +33,7 @@ import java.util.ArrayList;
  * Ported to Android Studio by Kostiantyn Kucher in 2015.
  * Last modified by Kostiantyn Kucher on 10/09/2015.
  */
-public class MP3Player extends ListActivity {
+public class MP3Player extends  ListActivity{
 
     // This is an oversimplified approach which you should improve
     // Currently, if you exit/re-enter activity, a new instance of player is created
@@ -41,12 +41,13 @@ public class MP3Player extends ListActivity {
     // and if you click a song, you will hear another audio stream started
     MyService player_service;
     private Intent intent;
+    public static String PACKAGE_NAME;
     ArrayList<Song> songs;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
+        PACKAGE_NAME = getApplicationContext().getPackageName();
         songs = songList();
         setListAdapter(new PlayListAdapter(this, songs));
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener()
@@ -80,7 +81,8 @@ public class MP3Player extends ListActivity {
             row = getLayoutInflater().inflate(R.layout.layout_row, parent, false);
 
             TextView name = (TextView) row.findViewById(R.id.label);
-            name.setText(String.valueOf(data));
+            name.setText(data.getName()+"\n" +
+                    data.getArtist());
             row.setTag(data);
 
             return row;

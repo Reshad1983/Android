@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.reshad.mymp3player" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGEWRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.reshad.mymp3player.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="reshad.assingment.Main" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.reshad.mymp3player.VisitedCountry"
+            android:label="@string/title_activity_visited_country"
+            android:parentActivityName="com.example.reshad.mymp3player.MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.example.reshad.mymp3player.NewCountryActivity"
+            android:label="@string/title_activity_country_visited"
+            android:parentActivityName="com.example.reshad.mymp3player.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.example.reshad.mymp3player.UpdateCountry"
+            android:label="@string/title_activity_update_country"
+            android:parentActivityName="com.example.reshad.mymp3player.VisitedCountry" >
+        </activity>
+        <activity
+            android:name="com.example.reshad.mymp3player.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName="com.example.reshad.mymp3player.VisitedCountry"
+            android:theme="@style/PreferencesTheme" >
+        </activity>
+        <activity
+            android:name="com.example.reshad.mymp3player.AlarmActivity"
+            android:label="@string/title_activity_alarm"
+            android:parentActivityName="com.example.reshad.mymp3player.MainActivity"
+            >
+        </activity>
+
+        <receiver
+            android:name="com.example.reshad.mymp3player.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="reshad.assingment.ALARM_BROADCAST" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.reshad.mymp3player.MP3Player"
+            android:label="@string/mp3"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <service
+            android:name="com.example.reshad.mymp3player.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

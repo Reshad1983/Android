@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_entries">
+        <item>10 dp</item>
+        <item>15 dp</item>
+        <item>20 dp</item>
+        <item>30 dp</item>
+    </string-array>
+    <string-array name="list_values">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="color_name_list">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="color_value_list">
+        <item>#0000ff</item>
+        <item>#00ff00</item>
+        <item>#ffff00</item>
+        <item>#000000</item>
+        <item>#ededed</item>
+    </string-array>
+</resources>

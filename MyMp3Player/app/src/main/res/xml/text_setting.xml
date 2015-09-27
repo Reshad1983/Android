@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="Size List"
+        android:title="Text size"
+        android:summary="Size of text"
+        android:entries="@array/list_entries"
+        android:entryValues="@array/list_values"
+        />
+
+    <ListPreference
+        android:key="Text color List"
+        android:title="Text color"
+        android:summary="Choose a text color"
+        android:entries="@array/color_name_list"
+        android:entryValues="@array/color_value_list"
+        />
+</PreferenceScreen>

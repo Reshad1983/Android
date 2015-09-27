@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/horizontal_layout"
+    android:background="#000449"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/alarm_time_id"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="21 : 21 : 23"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Remove"
+        android:textSize="12dp"
+        android:id="@+id/toggleButton" />
+</LinearLayout>
