@@ -34,7 +34,7 @@
         </receiver>
 
         <activity
-            android:name="dv606.widget.MainActivity"
+            android:name="dv606.widget.ConfigActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
@@ -51,12 +51,6 @@
             android:parentActivityName="dv606.widget.VaxjoWeather"
             android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
         </activity>
-
-        <service
-            android:name="dv606.widget.VaderService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
     </application>
 
 </manifest>

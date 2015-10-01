@@ -1,6 +1,5 @@
 package dv606.widget;
 
-import java.util.Arrays;
 import java.util.Calendar;
 
 import android.app.PendingIntent;
@@ -26,9 +25,10 @@ public class TimeWidget extends AppWidgetProvider {
 		String time = DateFormat.format("hh:mm:ss", Calendar.getInstance().getTime()).toString();
 		
 		final int N = appWidgetIds.length;
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; i++)
+		{
 			int appWidgetId = appWidgetIds[i];
-			RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.time_widget);
+			RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.weather_widget);
 			//views.setTextViewText(R.id.time, time);
 			//registering onClickListener
 			Intent clickIntent = new Intent(context, TimeWidget.class);
@@ -60,11 +60,21 @@ public class TimeWidget extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
-		Log.w(LOG, "onUpdate method called: " + Arrays.toString(appWidgetIds));
+		final int N = appWidgetIds.length;
+		for (int i = 0; i < N; i++)
+		{
+			int appWidgetId = appWidgetIds[i];
+			RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.weather_widget);
+			//registering onClickListener
+			Intent clickIntent = new Intent(context, TimeWidget.class);
+			clickIntent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+			clickIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, new int[]{appWidgetId});
+			PendingIntent pendingIntent = PendingIntent.getBroadcast(context, appWidgetId, clickIntent,
+					PendingIntent.FLAG_UPDATE_CURRENT);
+			views.setOnClickPendingIntent(R.id.icon_view, pendingIntent);
 
-
-
-		updateTime(context, appWidgetManager, appWidgetIds);
+			appWidgetManager.updateAppWidget(appWidgetId, views);
+		}
 	}
 
 	@Override
@@ -72,11 +82,13 @@ public class TimeWidget extends AppWidgetProvider {
 		super.onReceive(context, intent);
 
 
-		/*SharedPreferences pref = context.getSharedPreferences(MainActivity.PREFS_NAME, 0);
-		String cityName  = pref.getString(MainActivity.PREF_CITY_NAME, null);
+		SharedPreferences pref = context.getSharedPreferences(ConfigActivity.PREFS_NAME, 0);
+		String cityName  = pref.getString(ConfigActivity.PREF_CITY_NAME, null);
 		Log.w(LOG, "City name" + cityName);
 
-		*/
+
+
+
 		Log.w(LOG, "onReceive method called: " + intent.getAction());
 		
 		if (intent.getAction().equals(Intent.ACTION_AIRPLANE_MODE_CHANGED))

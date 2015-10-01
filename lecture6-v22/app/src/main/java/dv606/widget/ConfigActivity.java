@@ -2,24 +2,24 @@ package dv606.widget;
 
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.IBinder;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RemoteViews;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import java.util.ArrayList;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class ConfigActivity extends Activity implements View.OnClickListener{
 TextView halmstad_view, stockholm_view, vaxjo_view;
 
     public static final String CITY_NAME = "city_name";
@@ -29,10 +29,13 @@ TextView halmstad_view, stockholm_view, vaxjo_view;
 
     int mAppWidgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
     EditText mAppWidgetPrefix;
-    VaderService vaderService;
     WeatherReport report;
+    private String cityName;
     Intent serviceIntent;
+    private AppWidgetManager manager;
+    private RemoteViews views;
     private List<WeatherForecast> weather_list;
+    private URL city_xml;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,61 +88,42 @@ TextView halmstad_view, stockholm_view, vaxjo_view;
     protected void onStart() {
         super.onStart();
 
-
-        if(serviceIntent == null)
-        {
-            serviceIntent = new Intent(this, VaderService.class);
-            bindService(serviceIntent, serviceConnection, MainActivity.BIND_AUTO_CREATE);
-            startService(serviceIntent);
-
-        }
     }
 
     @Override
     protected void onStop() {
-        unbindService(serviceConnection);
         super.onStop();
     }
 
     @Override
     public void onClick(View v) {
-        final Context context = MainActivity.this;
-        final String cityName;
+        final Context context = ConfigActivity.this;
+        manager = AppWidgetManager.getInstance(context);
+        views = new RemoteViews(context.getPackageName(), R.layout.weather_widget);
         switch(v.getId())
         {
             case R.id.halmstad_id:
 
                 cityName = "Halmstad";
-                vaderService.getWeatherReport(cityName);
-
                 try
                 {
-
-                    report = vaderService.getReport();
+                    city_xml = new URL(WeatherListReader.cities[WeatherListReader.getPosition(cityName)]);
                 }
-                catch(NullPointerException e)
+                catch(MalformedURLException e)
                 {
                     e.printStackTrace();
                 }
-                weather_list = report.weatherForecastList();
+                AsyncTask weatherRetriever = new WeatherRetriever().execute();
+                //weather_list = report.weatherForecastList();
 
                 saveCityName(context, mAppWidgetId, cityName);
-                AppWidgetManager manager = AppWidgetManager.getInstance(context);
-                RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.time_widget);
-                views.setImageViewResource(R.id.icon_view, WeatherListReader.getIdForIcon(weather_list.get(0)));
-                views.setTextViewText(R.id.cityName_id, cityName);
-                views.setTextViewText(R.id.temp_id, weather_list.get(0).getTemperature()+" c");
-                manager.updateAppWidget(mAppWidgetId, views);
+
 
 
 
                // manager.updateAppWidget(context, app);
 
-                Intent result = new Intent();
-                result.putExtra("CITY", cityName);
-                result.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
-                setResult(RESULT_OK, result);
-                finish();
+
             break;
             case R.id.stockholm_id:
             break;
@@ -152,22 +136,51 @@ TextView halmstad_view, stockholm_view, vaxjo_view;
 
     }
 
+    private void finishThisActivity()
+    {
+        Intent result = new Intent();
+        result.putExtra("CITY", cityName);
+        result.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
+        setResult(RESULT_OK, result);
+        finish();
+    }
+
     static void saveCityName(Context context, int mAppWidgetId, String cityName) {
         SharedPreferences.Editor editor = context.getSharedPreferences(PREFS_NAME, 0).edit();
         editor.putString(PREF_CITY_NAME, cityName);
         editor.commit();
     }
-    private ServiceConnection serviceConnection = new ServiceConnection() {
-        @Override
-        public void onServiceConnected(ComponentName name, IBinder service) {
-            VaderService.ServiceBinder binder = (VaderService.ServiceBinder)service;
-            vaderService = binder.getService();
+
+
+
+
+
+
+
+    private class WeatherRetriever extends AsyncTask<URL, Void, WeatherReport>
+    {
+        protected WeatherReport doInBackground(URL... urls) {
+            try {
+                WeatherReport new_report = WeatherHandler.getWeatherReport(city_xml);
+                return new_report;
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        protected void onProgressUpdate(Void... progress) {
 
         }
 
-        @Override
-        public void onServiceDisconnected(ComponentName name) {
-            vaderService = null;
+        protected void onPostExecute(WeatherReport result) {
+            Toast.makeText(getApplicationContext(), "WeatherRetriever task finished", Toast.LENGTH_LONG).show();
+            weather_list = result.weatherForecastList();
+            views.setImageViewResource(R.id.icon_view, WeatherListReader.getIdForIcon(weather_list.get(0)));
+            views.setTextViewText(R.id.cityName_id, cityName);
+            views.setTextViewText(R.id.temp_id, weather_list.get(0).getTemperature()+" c");
+            manager.updateAppWidget(mAppWidgetId, views);
+
+            finishThisActivity();
         }
-    };
+    }
 }

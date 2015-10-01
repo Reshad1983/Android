@@ -34,7 +34,7 @@
         </receiver>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ConfigActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
@@ -53,11 +53,6 @@
         </activity>
 
 
-        <service
-            android:name=".VaderService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
     </application>
 
 </manifest>

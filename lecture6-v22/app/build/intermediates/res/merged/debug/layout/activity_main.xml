@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="dv606.widget.MainActivity">
+    tools:context="dv606.widget.ConfigActivity">
 
     <TextView android:text="@string/city_choose" android:layout_width="wrap_content"
         android:layout_height="50dp" android:textSize="30sp" android:gravity="center_vertical" />
