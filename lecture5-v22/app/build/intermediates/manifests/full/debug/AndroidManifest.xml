@@ -68,9 +68,7 @@
             android:name="dv606.lecture5.ServiceDemo"
             android:label="Service Demo" />
 
-        <service
-            android:name="dv606.lecture5.SlowCountService"
-            android:enabled="true" />
+        <service android:name="dv606.lecture5.SlowCountService" />
 
         <activity
             android:name="dv606.lecture5.BinderDemo"

@@ -65,8 +65,7 @@
             android:label="Service Demo" />
 
         <service
-            android:name=".SlowCountService"
-            android:enabled="true" />
+            android:name=".SlowCountService"/>
 
         <activity
             android:name=".BinderDemo"

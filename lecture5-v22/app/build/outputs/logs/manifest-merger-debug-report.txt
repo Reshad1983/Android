@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:2:1-98:12
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:2:1-97:12
 	package
 		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:7:5-96:19
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:7:5-95:19
 	android:label
 		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:9:9-45
 	android:icon
@@ -108,47 +108,45 @@ ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:64:13-40
 service#dv606.lecture5.SlowCountService
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:67:9-69:38
-	android:enabled
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:69:13-35
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:67:9-68:47
 	android:name
 		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:68:13-45
 activity#dv606.lecture5.BinderDemo
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:71:9-73:43
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:70:9-72:43
 	android:label
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:73:13-40
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:72:13-40
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:72:13-39
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:71:13-39
 activity#dv606.lecture5.AlarmDemo
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:76:9-78:42
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:75:9-77:42
 	android:label
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:78:13-39
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:77:13-39
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:77:13-38
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:76:13-38
 receiver#dv606.lecture5.AlarmReceiver
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:80:9-86:20
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:79:9-85:20
 	android:label
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:82:13-51
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:81:13-51
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:81:13-42
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:80:13-42
 intent-filter#dv606.lecture5.ALARM_BROADCAST
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:83:13-85:29
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:82:13-84:29
 action#dv606.lecture5.ALARM_BROADCAST
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:84:17-73
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:83:17-73
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:84:25-70
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:83:25-70
 activity#dv606.lecture5.Threading
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:89:9-91:54
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:88:9-90:54
 	android:label
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:91:13-51
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:90:13-51
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:90:13-38
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:89:13-38
 activity#dv606.lecture5.AlarmTest
-ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:92:9-95:20
+ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:91:9-94:20
 	android:label
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:94:13-62
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:93:13-62
 	android:name
-		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:93:13-38
+		ADDED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml:92:13-38
 uses-sdk
 INJECTED from F:\Theses\Linne\Android\lecture5-v22\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 	android:targetSdkVersion

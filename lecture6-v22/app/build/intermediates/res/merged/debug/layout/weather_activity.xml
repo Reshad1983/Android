@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/date_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:textSize="14sp"
+			android:gravity="center_vertical" />
+	</LinearLayout>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/temp_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:textSize="15sp"
+			android:gravity="center_horizontal"
+			android:text="Temp"/>
+		<TextView
+			android:id="@+id/temp_text_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:textSize="18sp"
+			android:gravity="center_horizontal" />
+	</LinearLayout>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/day_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="@drawable/klart"
+			/>
+		<TextView
+			android:id="@+id/klarhet_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:textSize="14sp" />
+	</LinearLayout>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/wind_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:gravity="center_vertical"
+			android:textSize="14sp"
+			android:text="Wind"/>
+		<TextView
+			android:id="@+id/wind_text_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:gravity="center_vertical"
+			android:textSize="14sp"
+			android:text=""/>
+	</LinearLayout>
+</LinearLayout>
+<!-- From: file:/F:/Theses/Linne/Android/lecture6-v22/app/src/main/res/layout/weather_activity.xml -->

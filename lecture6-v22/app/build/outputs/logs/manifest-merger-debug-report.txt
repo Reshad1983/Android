@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:3:5-27
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:5:5-30
+	android:versionCode
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.INTERNET
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:14:22-77
+application
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:17:5-61:19
+	android:label
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:19:9-41
+	android:icon
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:18:9-44
+	android:theme
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:20:9-40
+receiver#dv606.widget.TimeWidget
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:21:9-34:20
+	android:label
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:23:13-34
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:22:13-39
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE+android.intent.action.AIRPLANE_MODE+android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:24:13-29:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:25:17-84
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:25:25-81
+action#android.intent.action.MAIN
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:26:21-73
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:26:29-70
+action#android.intent.action.AIRPLANE_MODE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:27:21-82
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:27:29-79
+category#android.intent.category.LAUNCHER
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:28:21-81
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:28:31-78
+meta-data#android.appwidget.provider
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:31:13-33:64
+	android:resource
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:33:17-61
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:32:17-58
+activity#dv606.widget.MainActivity
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:36:9-42:20
+	android:label
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:37:13-41
+intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:39:13-41:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:40:17-87
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:40:25-84
+activity#dv606.widget.VaxjoWeather
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:42:21-46:16
+	android:label
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:44:9-60
+	android:theme
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:45:9-70
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:43:9-37
+activity#dv606.widget.OneDayWeather
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:48:9-53:20
+	android:label
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:50:13-52
+	android:parentActivityName
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:52:13-55
+	android:theme
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:51:13-74
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:49:13-42
+service#dv606.widget.VaderService
+ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:56:9-60:19
+	android:enabled
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:58:13-35
+	android:exported
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:59:13-36
+	android:name
+		ADDED from F:\Theses\Linne\Android\lecture6-v22\app\src\main\AndroidManifest.xml:57:13-41

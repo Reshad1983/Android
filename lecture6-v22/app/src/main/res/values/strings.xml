@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TimeWidget</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="city_choose">Please choose a city</string>
+    <string name="halmstad">Halmstad</string>
+    <string name="stockholm">Stockholm</string>
+    <string name="vaxjo">Växjö</string>
+    <string name="action_settings">Settings</string>
+    <string name="one_day_weather">One Day Weather</string>string>
+    <string name="title_activity_vaxjoweather">Växjö Weather</string>
+    <string name="weather">Weather</string>
+    <string name="temperature">Temperature</string>
+
+</resources>
