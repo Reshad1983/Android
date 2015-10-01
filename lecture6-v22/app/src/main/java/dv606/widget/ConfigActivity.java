@@ -175,9 +175,9 @@ TextView halmstad_view, stockholm_view, vaxjo_view;
         protected void onPostExecute(WeatherReport result) {
             Toast.makeText(getApplicationContext(), "WeatherRetriever task finished", Toast.LENGTH_LONG).show();
             weather_list = result.weatherForecastList();
-            views.setImageViewResource(R.id.icon_view, WeatherListReader.getIdForIcon(weather_list.get(0)));
+            //views.setImageViewResource(R.id.icon_view, WeatherListReader.getIdForIcon(weather_list.get(0)));
             views.setTextViewText(R.id.cityName_id, cityName);
-            views.setTextViewText(R.id.temp_id, weather_list.get(0).getTemperature()+" c");
+            //views.setTextViewText(R.id.temp_id, weather_list.get(0).getTemperature()+" c");
             manager.updateAppWidget(mAppWidgetId, views);
 
             finishThisActivity();

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment_1</string>
+    <string name="bmi_string">BMI</string>
+    <string name="action_settings">Settings</string>
+    <string name="random_number">Random Integer</string>
+    <string name="weather">Weather</string>
+    <string name="temperature">Temperature</string>
+    <string name="title_activity_random_number">RandomNumberActivity</string>
+    <string name="title_activity_bmicalculator">BMICalculatorActivity</string>
+    <string name="visited_country">Visitd Country</string>
+    <string name="title_activity_country_visited">CountryVisited</string>
+    <string name="one_day_weather">One Day Weather</string>string>
+    <string name="title_activity_vaxjoweather">Växjö Weather</string>
+    <string name="beer_pager">BeerPager</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_main">Configuration Activity</string>
+</resources>

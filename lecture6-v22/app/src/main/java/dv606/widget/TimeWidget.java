@@ -36,7 +36,7 @@ public class TimeWidget extends AppWidgetProvider {
 			clickIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, new int[]{appWidgetId});
 			PendingIntent pendingIntent = PendingIntent.getBroadcast(context, appWidgetId, clickIntent,
 					PendingIntent.FLAG_UPDATE_CURRENT);
-			views.setOnClickPendingIntent(R.id.temp_id, pendingIntent);
+			views.setOnClickPendingIntent(R.id.cityName_id, pendingIntent);
 			
 			appWidgetManager.updateAppWidget(appWidgetId, views);
 		}
@@ -71,7 +71,7 @@ public class TimeWidget extends AppWidgetProvider {
 			clickIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, new int[]{appWidgetId});
 			PendingIntent pendingIntent = PendingIntent.getBroadcast(context, appWidgetId, clickIntent,
 					PendingIntent.FLAG_UPDATE_CURRENT);
-			views.setOnClickPendingIntent(R.id.icon_view, pendingIntent);
+			views.setOnClickPendingIntent(R.id.cityName_id, pendingIntent);
 
 			appWidgetManager.updateAppWidget(appWidgetId, views);
 		}

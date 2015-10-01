@@ -45,15 +45,14 @@ public final class R {
         public static final int widget_shape=0x7f02001b;
     }
     public static final class id {
-        public static final int action_settings=0x7f090013;
-        public static final int cityName_id=0x7f090012;
+        public static final int action_settings=0x7f090012;
+        public static final int cityName_id=0x7f090011;
         public static final int country=0x7f09000d;
         public static final int date_id=0x7f09000f;
         public static final int datum_id=0x7f090003;
         public static final int day_id=0x7f090010;
         public static final int day_image_id=0x7f090008;
         public static final int halmstad_id=0x7f090000;
-        public static final int icon_view=0x7f090011;
         public static final int klarhet_id=0x7f090009;
         public static final int population=0x7f09000e;
         public static final int position=0x7f09000c;
